@@ -6,7 +6,7 @@
     "pretest": "node seed_client.js",
     "prestart": "npm test",
     "start": "node ./bin/www",
-    "test": "NODE_ENV=test npx --reporter=text-lcov nyc mocha '**/*.spec.js' --timeout 10000 --exit | npx coveralls"
+    "test": "NODE_ENV=test npx nyc mocha '**/*.spec.js' --timeout 10000 --exit && npx nyc --reporter=text-lcov | npx coveralls"
   },
   "dependencies": {
     "@hapi/joi": "^17.0.0",

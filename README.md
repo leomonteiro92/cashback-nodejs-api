@@ -4,7 +4,7 @@ API to manage users
 
 ## Requirements
 
-- Node.js >= 8.11.0
+- Node.js >= 8.11.0 (Preferable the LTS Version Erbium)
 - MongoDB (Latest stable)
 - Optional: Docker and Docker Compose: Stable versions
 
@@ -63,18 +63,8 @@ To run tests, use:
 npm test
 ```
 
-### 5) Start the application with PM2
-
-By default the application uses PM2 as process manager, just run (no additional build steps are required):
+### 5) Start the application
 
 ```bash
 npm start
-```
-
-### 6) Stop the application
-
-To stop the application just run:
-
-```bash
-npm stop
 ```

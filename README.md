@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/leomonteiro92/cashback-api/badge.svg?branch=master)](https://coveralls.io/r/leomonteiro92/cashback-api?branch=master)
+
 # Node.JS API
 
 API to manage users

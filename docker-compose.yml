@@ -1,0 +1,21 @@
+version: "3.0"
+
+services:
+  db:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: actsky
+      MONGO_INITDB_ROOT_PASSWORD: actsky
+    ports:
+      - 27017:27017
+
+  api:
+    build:
+      context: .
+    image: core-api
+    ports:
+      - 5000:5000
+    environment:
+      DB_URL: mongodb://actsky:actsky@db:27017
+    depends_on:
+      - db

@@ -4,8 +4,8 @@ services:
   db:
     image: mongo
     environment:
-      MONGO_INITDB_ROOT_USERNAME: actsky
-      MONGO_INITDB_ROOT_PASSWORD: actsky
+      MONGO_INITDB_ROOT_USERNAME: c4shb4ck
+      MONGO_INITDB_ROOT_PASSWORD: c4shb4ck
     ports:
       - 27017:27017
 
@@ -16,6 +16,6 @@ services:
     ports:
       - 5000:5000
     environment:
-      DB_URL: mongodb://actsky:actsky@db:27017
+      DB_URL: mongodb://c4shb4ck:c4shb4ck@db:27017
     depends_on:
       - db

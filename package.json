@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "pretest": "node seed_client.js",
-    "prestart": "node seed_client.js",
+    "prestart": "npm test",
     "start": "node ./bin/www",
-    "test": "npx nyc --reporter=text mocha '**/*.spec.js' --timeout 10000 --exit"
+    "test": "NODE_ENV=test npx nyc --reporter=text mocha '**/*.spec.js' --timeout 10000 --exit"
   },
   "dependencies": {
     "@hapi/joi": "^17.0.0",
@@ -14,7 +14,6 @@
     "bcrypt": "^3.0.7",
     "express": "~4.16.1",
     "express-oauth-server": "^2.0.0",
-    "fastest-validator": "^1.0.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.8.3",
     "pm2": "^4.2.1"

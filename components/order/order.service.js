@@ -10,7 +10,9 @@ module.exports.create = async inputOrder => {
     user: Joi.object({
       _id: Joi.any(),
       cpf: Joi.string()
-    }).required()
+    })
+      .unknown(true)
+      .required()
   });
   const { error } = schema.validate(inputOrder);
   if (error) throw new Error(error.message);

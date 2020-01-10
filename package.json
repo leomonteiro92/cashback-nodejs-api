@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "pretest": "node seed_client.js",
-    "prestart": "npm test",
     "start": "node ./bin/www",
     "test": "NODE_ENV=test npx nyc mocha '**/*.spec.js' --timeout 10000 --exit && npx nyc report --reporter=text-lcov | npx coveralls"
   },
@@ -12,6 +11,7 @@
     "@hapi/joi": "^17.0.0",
     "axios": "^0.19.1",
     "bcrypt": "^3.0.7",
+    "cors": "^2.8.5",
     "express": "~4.16.1",
     "express-oauth-server": "^2.0.0",
     "jsonwebtoken": "^8.5.1",
@@ -19,6 +19,7 @@
     "pm2": "^4.2.1"
   },
   "devDependencies": {
+    "@types/hapi__joi": "^16.0.6",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "chai-http": "^4.3.0",

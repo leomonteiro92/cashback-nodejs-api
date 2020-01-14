@@ -65,7 +65,7 @@ module.exports.list = async user => {
   const filters = { user };
   const [count, orders] = await Promise.all([
     OrderDAL.count(filters),
-    OrderDAL.list(filters)
+    OrderDAL.list({ filters })
   ]);
   return { count, orders };
 };

@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/leomonteiro92/cashback-api/badge.svg?branch=master)](https://coveralls.io/r/leomonteiro92/cashback-api?branch=master)
+[![Coverage Status](https://coveralls.io/repos/leomonteiro92/cashback-nodejs-api/badge.svg?branch=master)](https://coveralls.io/r/leomonteiro92/cashback-nodejs-api?branch=master)
 
 # Node.JS API
 

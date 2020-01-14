@@ -1,5 +1,5 @@
 {
-  "name": "cashback-api",
+  "name": "cashback-nodejs-api",
   "version": "0.0.0",
   "private": true,
   "scripts": {

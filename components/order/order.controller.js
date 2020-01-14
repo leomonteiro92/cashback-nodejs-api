@@ -31,7 +31,8 @@ module.exports.findById = async (req, res) => {
 
 module.exports.list = async (req, res) => {
   try {
-    const result = await OrderService.list();
+    const { user } = res.locals.oauth.token;
+    const result = await OrderService.list(user._id);
     res.status(200);
     return res.json(result);
   } catch (err) {

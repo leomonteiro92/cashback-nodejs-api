@@ -1,8 +1,8 @@
-[![Coverage Status](https://coveralls.io/repos/leomonteiro92/cashback-nodejs-api/badge.svg?branch=master)](https://coveralls.io/r/leomonteiro92/cashback-nodejs-api?branch=master)
+[![Build Status](https://travis-ci.org/leomonteiro92/cashback-nodejs-api.svg?branch=master)](https://travis-ci.org/leomonteiro92/cashback-nodejs-api)[![Coverage Status](https://coveralls.io/repos/leomonteiro92/cashback-nodejs-api/badge.svg?branch=master)](https://coveralls.io/r/leomonteiro92/cashback-nodejs-api?branch=master)
 
 # Node.JS API
 
-API to manage users
+API to manage consultants and cashback
 
 ## Requirements
 
@@ -10,7 +10,7 @@ API to manage users
 - MongoDB (Latest stable)
 - Optional: Docker and Docker Compose: Stable versions
 
-## Running Superheroes API
+## Running the API
 
 ### 1) Ensure databases are running
 

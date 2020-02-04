@@ -47,6 +47,10 @@ mSchema.pre("update", function() {
   this.updatedAt = new Date();
 });
 
+mSchema.pre("save", function() {
+  this.createdAt = new Date();
+});
+
 const mModel = mongoose.model("Order", mSchema);
 
 module.exports = mModel;
